@@ -1,4 +1,4 @@
 # libuv-server
 ```
-g++ -std=c++0x -l=libc++ server.cpp
+g++ -std=c++11 -stdlib=libc++ -luv server.cpp
 ```

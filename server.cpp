@@ -35,7 +35,6 @@ int main() {
                     std::cout << "alloc " << size << std::endl;
                     buf->base = (char*)malloc(size);
                     buf->len = size;
-                    //return buf;
                 },
                 [](uv_stream_t* tcp, ssize_t nread, const uv_buf_t* buf) {
                     std::cout << "read" << std::endl;
